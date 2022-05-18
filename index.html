@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="video-slider">
+        <video src="video1.mp4" id="video-slider" autoplay muted controls loop></video>
+        <ul class="video-thumb">
+            <li onclick="changeVideo('video1.mp4')"><img src="1.jpg"></li>
+            <li onclick="changeVideo('video2.mp4')"><img src="2.jpg"></li>
+            <li onclick="changeVideo('video3.mp4')"><img src="3.jpg"></li>
+        </ul>
+    </section>
+    <script>
+        function changeVideo(url) {
+            document.getElementById('video-slider').scr = url;
+        }
+    </script>
+</body>
+
+</html>
